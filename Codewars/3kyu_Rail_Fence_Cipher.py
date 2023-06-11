@@ -14,7 +14,7 @@ n = 5
 def encode_rail_fence_cipher(string, n):
     res = ''
     for r in range(n):
-        increment = 2 * (n - 1)
+        increment = 2 * (n - 1)  # define how pattern repeats
         for i in range(r, len(string), increment):
             res += string[i]
             if r > 0 and r < n - 1 and i + increment - 2 * r < len(string):
