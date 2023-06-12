@@ -5,7 +5,6 @@ In this solution I used DFS and backtracking
 
 """
 
-
 class Solution:
     def uniquePathsIII(self, grid: list[list[int]]) -> int:
         m = len(grid)
