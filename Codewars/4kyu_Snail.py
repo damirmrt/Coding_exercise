@@ -4,6 +4,10 @@ https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1
 Main idea in my solution is using four pointer. One pointer for each side of 2D array.
 On first cycle you iterate ove outer edge of array,
 then increment/decrement all pointers by 1 and repeat till you reach center
+
+Time Complexity: O(n*m)
+Space Complexity: O(n*m)
+
 '''
 def snail(snail_map):
     if len(snail_map) == 1:

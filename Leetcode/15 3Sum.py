@@ -1,3 +1,11 @@
+"""
+Highly recommended firstly to solve 2Sum problem to understand this solution
+
+Time Complexity: O(n^2)
+Space Complexity: O(n)
+
+"""
+
 
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:

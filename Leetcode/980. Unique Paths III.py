@@ -3,6 +3,9 @@ https://leetcode.com/problems/unique-paths-iii
 
 In this solution I used DFS and backtracking
 
+Time Complexity: O(m^2 * n^2)
+Space Complexity: O(n)
+
 """
 
 class Solution:

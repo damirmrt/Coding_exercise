@@ -6,6 +6,10 @@ and then over all values in this rail
 
 For decoder, I didn't make solution with same approach as for encoder.
 Detailed explanation in comments.
+
+Time Complexity: O(nlogn)
+Space Complexity: O(n)
+
 '''
 
 a = 'WECRLTEEEDROSEEEFOAAIVDEN'

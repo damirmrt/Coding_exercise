@@ -1,7 +1,15 @@
+"""
+Two pointers solution.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+"""
+
 class Solution:
     def maxArea(self,
                 height: list[int]) -> int:
-        # This is two pointers approach you start from the opposite sides of array and calculate Q for each step
+        # You start from the opposite sides of array and calculate Q for each step
         l,r = 0, len(height)-1
         max_Q = 0
 

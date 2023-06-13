@@ -3,6 +3,9 @@
 In this solution I used 4 pointers approach. I iterate over all numbers in outer rows,
 then increment pointers by one till they met each other
 
+Time Complexity: O(n*m)
+Space Complexity: O(1)
+
 """
 
 

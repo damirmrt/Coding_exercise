@@ -9,6 +9,8 @@ This solution uses simple 1D Dynamic Programing approach
 [8, 5, 9, 3] dp = [8, 5, 9, 3, 0]
              dp = [0, 0, 0, 0, 0]
 
+Time Complexity: O(n * m)
+Space Complexity: O(n)
 """
 
 

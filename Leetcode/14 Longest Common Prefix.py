@@ -1,3 +1,8 @@
+"""
+Time Complexity: O(n*m) # where n is number of words, and m is lenght of the shortest word
+Space Complexity: O(m)
+"""
+
 class Solution:
     def longest_common_prefix(self, strs: list[str]) -> str:
 
