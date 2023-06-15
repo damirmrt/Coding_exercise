@@ -2,6 +2,9 @@
 Two pointer solution, we move right pointer till number change
 than we iterate over min(2,counter) because we need left 2 same numbers or less.
 In other words each time we move left pointer maximum by 2 positions, and overwrite rest.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
 """
 
 
