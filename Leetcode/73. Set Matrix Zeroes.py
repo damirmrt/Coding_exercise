@@ -23,11 +23,11 @@ class Solution:
                     if r > 0:
                         matrix[r][0] = 0
                     else:
-                        rowZero = True # if zero in first row we need to fill with zeros but later
+                        rowZero = True  # if zero in first row we need to fill with zeros but later
 
-        for r in range(1, rows):
+        for r in range(1, rows):  # fill all array with 0 except first row and column
             for c in range(1, cols):
-                if matrix[0][c] == 0 or matrix[r][0] == 0:
+                if matrix[0][c] == 0 or matrix[r][0] == 0:  # according previously filled first row and column
                     matrix[r][c] = 0
 
         if matrix[0][0] == 0:
@@ -37,3 +37,4 @@ class Solution:
         if rowZero:
             for c in range(cols):
                 matrix[0][c] = 0
+
