@@ -1,26 +1,29 @@
-'''
-Write a code to calculate the number of points laying inside of a sphere with radius R.
-Input is (N, D) array where N is a number of points, and D is dimensionality.
+import heapq     
 
-print(points_in_sphere(np.array(
-[[0.5, 0.5, 0.5],
- [0.5, 0.5, 1.5],
- [0.5, 1.5, 1.5],
- [0.5, 0.15, 0.15]]), 1.0))
+class MedianFinder:
+
+    def __init__(self):
+        self.arr = []
+        heapq.heapify(self.arr)
+
+    def addNum(self, num: int) -> None:
+        heapq.heappush(self.arr, num)
+        
+
+    def findMedian(self) -> float:
+        lenght = len(self.arr)
+        if lenght % 2 != 0:
+            return self.arr[int(lenght / 2)]
+        else:
+            res = (self.arr[int(lenght / 2) - 1] + self.arr[int(lenght / 2)]) / 2
+        return res
 
 
-'''
+l = MedianFinder()
+print(l.addNum(1))
+print(l.findMedian())
+print(l.addNum(3))
+print(l.findMedian())
+print(l.addNum(2))
+print(l.findMedian())
 
-def solution (points, r):
-    counter = 0
-    for i in range(len(points)):
-        tmp = 0
-        for j in points[i]:
-            tmp += j**2
-        if tmp <= r**2:
-            counter += 1
-    return counter
-
-points = [[0.5, 0.5, 0.5], [0.5, 0.5, 0.8], [0.5, 1.5, 1.5], [0.5, 0.15, 0.15]]
-
-print(solution(points,2))

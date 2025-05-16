@@ -6,7 +6,6 @@ Space Complexity: O(n)
 
 """
 
-
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         nums.sort()
@@ -22,7 +21,6 @@ class Solution:
             # iterate over rest two element of our three sums
             while l < r:
                 threeSumm = nums[i] + nums[l] + nums[r]
-                # We just move our left pointer if sum > target or move right pointer if sum < target
                 if threeSumm > 0:
                     r -= 1
                 elif threeSumm < 0:
